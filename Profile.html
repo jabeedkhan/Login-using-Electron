@@ -1,0 +1,60 @@
+<html>
+
+   <head>
+      <title>HTML Table Width/Height</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even){background-color: #f2f2f2}
+    </style>
+   <body>
+    <table>
+        <caption> <b>This is Profile Infromation</caption><br><br>
+        <tr>
+           <th>First Name</th>
+           <th>Last Name</th>
+           <th>City</th>
+           <th>Email</th>
+        </tr>
+        <tr>
+           <td id="fname"></td>
+           <td id="lname"></td>
+           <td id="cityValue"></td>
+           <td id="emailid"></td>
+        </tr>
+         
+     </table>
+        <br><br>
+        <div>
+            <!-- <a href="HomePage.html">Back</a> -->
+            <form method="get" action="HomePage.html">
+                <button type="submit">HomeScreen</button>
+            </form>
+        </div>
+
+   </body>
+   <script>
+    var fname = localStorage.getItem("firstname");
+    document.getElementById("fname").innerHTML = fname;
+    var lname = localStorage.getItem("lastname");
+    document.getElementById("lname").innerHTML = lname;
+    var city = localStorage.getItem("city");
+    document.getElementById("cityValue").innerHTML = city;
+    var emailid = localStorage.getItem("emailid");
+    document.getElementById("emailid").innerHTML = emailid;
+
+</script>
+	
+</html>

@@ -1,0 +1,12 @@
+2020-11-27 13:50:14.642 IST [34799] FATAL:  lock file "postmaster.pid" already exists
+2020-11-27 13:50:14.642 IST [34799] HINT:  Is another postmaster (PID 34789) running in data directory "/usr/local/var/postgres"?
+2020-11-27 13:52:17.451 IST [35254] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2020-11-27 13:52:17.454 IST [35254] LOG:  listening on IPv6 address "::1", port 5432
+2020-11-27 13:52:17.454 IST [35254] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-11-27 13:52:17.456 IST [35254] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-11-27 13:52:17.463 IST [35255] LOG:  database system was shut down at 2020-11-27 13:52:04 IST
+2020-11-27 13:52:17.475 IST [35254] LOG:  database system is ready to accept connections
+2020-11-27 14:17:54.109 IST [35254] LOG:  received smart shutdown request
+2020-11-27 14:17:54.111 IST [35254] LOG:  background worker "logical replication launcher" (PID 35261) exited with exit code 1
+2020-11-27 14:17:54.111 IST [35256] LOG:  shutting down
+2020-11-27 14:17:54.127 IST [35254] LOG:  database system is shut down

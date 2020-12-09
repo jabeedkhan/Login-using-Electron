@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="HomePage.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="main_content">
+            <div class="info">
+                <div id="cityName">
+                    <table cellpadding="5" cellspacing="5">
+                        <tr>
+                            <td> Welcome </td>
+                            <td id="name"></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <!-- <a href="HomePage.html">Back</a> -->
+                        <form method="get" action="HomePage.html">
+                            <button type="submit">HomeScreen</button>
+                        </form>
+                    </div>
+                </div>
+                <script>
+                    var name = localStorage.getItem("firstname");
+                    document.getElementById("name").innerHTML = name;
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
